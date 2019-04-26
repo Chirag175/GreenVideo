@@ -1,0 +1,49 @@
+/* This CSS file is responsible for providing the styling specifications of the entire website */
+.menu{
+	/* The 'margin' property is used to specify the dimensions of the element's margins */
+	margin-left: auto;
+	margin-right: 25px;
+	/* The 'text-align' property is used to align the text within the element */
+	/* The attributes left, right, center and justify are used to obtain the required text alignment */
+	text-align: right;
+	/* The 'float' property is used to align the element, either left or right */
+	float: right;
+}
+
+.navmenu{
+	text-align: center;
+	/* The 'color' property is used to choose the color of the text within the element */
+	color: white;
+	padding: 5px;
+	/* The 'font-size' property is used to define the size of the font to be used */
+	font-size: 18px;
+	font-weight: 700;
+	/* The 'line-height' property is used to specify the height of a line */
+	line-height: 10px;
+	/* The 'transition' property allows you to change property values smoothly (from one value to 
+	another), over a given duration ~ w3schools.com;
+	Used here to smoothen the sudden change during the increment of font size in the navigation header */
+	transition: 0.15s;
+}
+
+.navmenu:hover {
+	/* The 'text-decoration' property is used to refer to all the decorative properties that apply on the text within the element */
+	text-decoration: none;
+	color: white;
+	font-size: 28px;
+}
+
+.card:hover {
+	/* The 'background-color' property is used to choose a color for the background of the element */
+	background-color: black;
+	color: white;
+}
+
+/* To ensure 'Responsiveness', the media query enables us to adjust certain elements with respect to the screen size of the device ensuring that all web content is visible the way it is intended to */
+@media screen and (max-width: 500px) {
+  .navmenu {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
